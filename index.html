@@ -1,22 +1,43 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-<center><h2>🌎 Explore Belize Districts!</h2> <p>Click on a district name to highlight it on the map.</p></center> 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Force all map images to same size */
+    #myImage {
+        width: 300px;    /* Set any size you want */
+        height: 500px;   /* Same height for ALL images */
+        object-fit: contain; /* Keeps the map from stretching */
+    }
 
-<center><img id="myImage" src="belizeBelize.png" style="width:100px"> </center> 
+    body {
+        font-family: Arial, sans-serif;
+    }
 
-<center><button onclick="document.getElementById('myImage').src='belizeCorozal.png'">Corozal</button> 
+    button {
+        padding: 10px 15px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
 
-<button onclick="document.getElementById('myImage').src='belizeOrangeWalk.png'">Orange Walk</button> 
+<body>
+<center>
+    <h2>🌎 Explore Belize Districts!</h2>
+    <p>Click on a district name to highlight it on the map.</p>
 
-<button onclick="document.getElementById('myImage').src='belizeBelize.png'">Belize</button> 
+    <img id="myImage" src="belizeBelize.png">
 
-<button onclick="document.getElementById('myImage').src='belizeCayo.png'">Cayo</button> 
+    <br><br>
 
-<button onclick="document.getElementById('myImage').src='belizeCayo.png'">Stann Creek</button> 
-
-<button onclick="document.getElementById('myImage').src='belizeToledo.png'">Toledo</button></center> 
-</body> 
+    <button onclick="document.getElementById('myImage').src='belizeCorozal.png'">Corozal</button>
+    <button onclick="document.getElementById('myImage').src='belizeOrangeWalk.png'">Orange Walk</button>
+    <button onclick="document.getElementById('myImage').src='belizeBelize.png'">Belize</button>
+    <button onclick="document.getElementById('myImage').src='belizeCayo.png'">Cayo</button>
+    <button onclick="document.getElementById('myImage').src='belizeStannCreek.png'">Stann Creek</button>
+    <button onclick="document.getElementById('myImage').src='belizeToledo.png'">Toledo</button>
+</center>
+</body>
 </html>
-
 
